@@ -1,0 +1,482 @@
+/* ---------------font links part start------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+/* ---------------font links part end------------- */
+/* ---------------common css part start------------- */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    /* display: inline-block; */
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --poppins: "Poppins", sans-serif;
+    --rubik: "Rubik", sans-serif;
+    --abril: "Abril Fatface", serif;
+    --abel:"Abel", sans-serif;
+    --abijabi: "ABeeZee", sans-serif;
+}
+/* ---------------common css part end------------- */
+/* ---------------menubar css part start------------- */
+.menubar ul{
+    gap: 36px;
+}
+.menubar ul  li a{
+    font-family: var(--poppins);
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    
+}
+.menubar ul  li a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    transform: scale(0);
+    background-color: #ED017F;
+    position: absolute;
+    transition: all linear .1s;
+}
+.menubar ul  li a:hover::after
+{
+    transform: scale(1);
+}
+.buttons{
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+.buttons .editingicon{
+    font-size: 24px;
+    color: #ED017F;
+    transition: all linear .3s;
+}
+.buttons .editingicon:hover{
+    font-size: 36px;
+    color: #CCCCCC;
+}
+.buttons .search{
+    width: 108px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #ED017F;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    font-family: var(--rubik);
+    font-weight: 500;
+    color: #FFFF;
+    letter-spacing: 2px;
+    transition: all linear .3s;
+}
+.buttons .search:hover{
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #CCCCCC;
+    color: #000;
+    box-shadow: 3px 1px 37px 1px rgba(237,1,127,0.75);
+-webkit-box-shadow: 3px 1px 37px 1px rgba(237,1,127,0.75);
+-moz-box-shadow: 3px 1px 37px 1px rgba(237,1,127,0.75);
+
+
+}
+/* ---------------menubar css part end------------- */
+/* ---------------heading css part start------------- */
+.picture{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.picture img{
+    position : absolute ;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.image-text h1{
+    margin-top: 142px;
+    font-size: 63px;
+    font-family: var(--abril);
+    font-weight: 400;
+}
+.image-text h1 span{
+    display: block;
+}
+.image-text p{
+    margin-top: 23px;
+    font-family: var(--abel);
+    color: #676767;
+    font-weight: 400;
+    font-size: 16px;
+}
+.image-text p span{
+    display: block;
+}
+.image-text .pink {
+    display: inline-block;
+    margin-top: 38px;
+    width: 157px;
+    height: 46px;
+    background-color: #ED017F;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 12px;
+    font-family: var(--poppins);
+    color: #FFF;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: all linear .3s;
+}
+.image-text .pink:hover{
+    width: 157px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 12px;
+    font-family: var(--poppins);
+    color: #ED017F;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border: 1px solid #ED017F;
+    overflow: none;
+}
+.image-text .white{
+    display: inline-block;
+    margin-top: 38px;
+    width: 187px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 12px;
+    font-family: var(--poppins);
+    color: #ED017F;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border: 1px solid #ED017F;
+    transition: all linear .3s;
+}
+.image-text  .white:hover{
+    width: 187px;
+    height: 46px;
+    background-color: #ED017F;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 12px;
+    font-family: var(--poppins);
+    color: #FFF;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.phone{
+    margin-top: 185px;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+.phone .number{
+    font-size: 24px;
+    color: #ED017F;
+}
+.phone h2{
+    font-family: var(--poppins);
+    color: #000;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+}
+.phone h2::after{
+    content: '';
+    height: 24px;
+    width: 1px;
+    background-color: #CCCCCC;
+    top: 0;
+    left: 79px;
+    position: absolute;
+}
+.phone .fkbk{
+    margin-left: 36px;
+}
+.phone .yt{
+    margin-left: 16px;
+}
+.phone .in{
+    margin-left: 16px;
+}
+.phone .insta{
+    margin-left: 16px;
+}
+
+/* ---------------heading css part end------------- */
+/* --------------- Creating Extraordinary Customer css part start------------- */
+ .cece-text{
+    margin-top: 155px;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-family: var(--poppins);
+    font-weight: 900;
+    color: #000;
+}
+ .description{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--poppins);
+    font-weight: 900;
+    color: #999999;
+}
+.description span{
+    display: block;
+}
+ h4{
+    font-family: var(--poppins);
+    font-size: 22px;
+    font-weight: 900;
+    color: #000;
+}
+ p{
+    margin-top: 10px;
+    margin-bottom: 26px;
+    font-family: var(--poppins);
+    font-size: 14px;
+    font-weight: 900;
+    color: #999999;
+}
+p span{
+    display: block;
+}
+
+
+/* --------------- Creating Extraordinary Customer css part end------------- */
+/* --------------- BUSINESS PARTNERS css part end------------- */
+.partner-box{
+    background-color:rgba(252, 224, 239, 0.20);
+}
+.partner_head{
+    padding-top: 78px;
+    text-align: center;
+    font-size: 23px;
+    font-family: var(--poppins);
+    font-weight: 900;
+    color: #343434;
+}
+.partner-foto{
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-around;
+}
+.dot{
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------- BUSINESS PARTNERS css part end------------- */
+/* -------------- IPDC at glance part start--------------------*/
+.plant-box{
+    display: flex;
+    gap: 110px;
+}
+.big-text{
+    margin-top: 188px;
+    margin-bottom: 161px;
+}
+.big-text h2{
+    width: 460px;
+    font-family: var(--abijabi);
+    font-size: 32px;
+    font-weight: 400;
+    color: #343434;
+}
+.big-text p{
+    width: 460px;
+    font-family: var(--abijabi);
+    font-size: 16px;
+    font-weight: 400;
+    color: #363940;
+}
+.big-text a{
+    width: 460px;
+    font-size: 19px;
+    font-family: var(--poppins);
+    font-weight: 900;
+    color: #ED017F;
+
+    
+}
+.big-text a span{
+    margin-left: 7px;
+}
+/* -------------- IPDC at glance part end--------------------*/
+/* -------------- Our Services part start--------------------*/
+.service-box{
+    background-color: #FEF9FC;
+}
+.cece-text2{
+    margin-top: 106px;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-family: var(--poppins);
+    font-weight: 900;
+    color: #000;
+}
+.description2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--poppins);
+    font-weight: 900;
+    color: #999999;
+}
+h3{
+    display: inline-block;
+    margin-top: 22px;
+    font-family: var(--poppins);
+    font-size: 21px;
+    font-weight: 900;
+    color: #363940;
+}
+h3 span{
+    display: block;
+}
+.arrow{
+    font-size: 15px;
+    margin-left: 86px;
+    color: #ED017F;
+    padding: 7px 7px 7px 7px;
+    background-color: #FCE0EF;
+    border-radius: 50%;
+}
+
+/* -------------- Our Services part end--------------------*/
+/* -------------- Best results part start--------------------*/
+h5{
+    display: inline-block;
+    /* margin-top: 30px; */
+    font-family: var(--poppins);
+    font-size: 30px;
+    font-weight: 900;
+    color: #343434;
+}
+.detailing{
+    margin-top: 8px;
+    margin-bottom: 67px;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 900;
+    color: #676767;
+}
+.detailing span{
+    display: block;
+}
+.form-box{
+    width: 100%;
+    height: 403px;
+    background-color: #FEF9FC;
+}
+.form-box h6{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--poppins);
+    font-weight: 900;
+    color: #000;
+}
+.last{
+    text-align: center;
+}
+input{
+    /* margin-left: 477px; */
+    height: 46px;
+    width: 343px;
+    border-color: #CCCCCC;
+    overflow: none;
+    padding-left: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: var(--poppins);
+    font-weight: 900;
+    color: #CCCCCC;
+    border-style: solid;
+}
+.lpink button{
+    width: 132px;
+    height: 46px;
+    background-color: #ED017F;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 12px;
+    font-family: var(--poppins);
+    color: #FFF;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border-style: none;
+    transition: all linear .3s;
+}
+.impt{
+    display: flex;
+    justify-content: center;
+    gap:11px ;
+}
+/* -------------- Best results part end--------------------*/
+/* -------------- footer part start--------------------*/
+.new{
+    margin-bottom: 20px;
+    font-family: var(--poppins);
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+}
+.newer a{
+    font-family: var(--poppins);
+    font-size: 14px;
+    font-weight: 900;
+    color: #676767;
+    
+}
+.neweree{
+    font-family: var(--poppins);
+    font-size: 14px;
+    font-weight: 900;
+    color: #676767;
+    
+}
+.neweree span{
+    display: block;
+}
+.newer span {
+    display: block;
+    margin-top: 10px;
+}
+.linkicon{
+   display: flex;
+   gap: 16px;
+}
+
+/* -------------- footer part end--------------------*/
+
+
